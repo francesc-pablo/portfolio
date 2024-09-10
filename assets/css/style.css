@@ -18,12 +18,12 @@ nav {
     color: #fff;
 }
 
-.hero {
+.hero { 
     background-image: url(../images/hero-bg.png);
     height: 100vh;
     background-size: cover;
     padding-top: 50px;
-}
+} 
 
 .title {
     font-size: 60px;
@@ -31,9 +31,4 @@ nav {
 
 .subtitle {
     font-size: 16px;
-}
-
-.hero-info {
-    width: 50%;
-    padding-top: 50px;
 }
