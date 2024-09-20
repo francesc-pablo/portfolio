@@ -5,35 +5,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Portfolio</title>
-</head>
 
+    <!-- box icons link -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- remix icons link -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+</head>
 <body>
-    <nav class="fixed right-0 left-0">
-        <h4 class="text-white">Wa.Pablo</h4>
-        <div class="nav-items">
-            <a class="text-white" href="#">Home</a>
-            <a class="text-white" href="#">About</a>
-            <a class="text-white" href="#">Services</a>
-            <a class="text-white" href="#">Portfolio</a>
-            <a class="text-white" href="#">Pricing</a>
-            <a class="text-white" href="#">Blog</a>
-            <a class="text-white" href="#">Contact</a>
+
+    <!-- header -->
+     <header>
+        <a href="#" class="logo"><img src="./assets/images/logo.png" alt=""></a>
+
+        <ul class="menulist">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </ul>
+
+        <div class="menu-right">
+            <a href="#" class="menu-btn">
+                <span>Let's Talk</span>
+                <i class="ri-message-3-line"></i>
+            </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
         </div>
-    </nav>
-    <section class="hero">
-        <div class="w-[60%] pl-[10%] pt-[100px]">
-            <p>Hi There!</p>
-            <h1 class="text-white title">I am Juan Pablo</h1>
-            <h1 class="text-white title">I am a web developer</h1>
-            <p class="subtitle text-white mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id repudiandae culpa sequi aut amet illum, at eaque voluptas exercitationem ipsum.</p>
-            <button class="bg-[#0779E4] h-[53px] text-white rounded font-bold px-[24px] py-[14px]">HIRE ME</button>
-            <button class="bg-[#fff] h-[53px] text-[#0779E4] rounded font-bold p-4 py-3">VIEW PORTFOLIO</button>
+     </header>
+
+     <!-- home -->
+      <section class="home" id="home">
+        <div class="home-text">
+            <a href="#" class="h-line">
+                <i class="ri-shining-2-line"></i>
+                <span>This is Pablo</span>
+            </a>
+            <h1>UI / UX and <br> <span id="fancy"></span></h1>
+            <h4>With 20+ years of experience</h4>
+            <div class="social-icons">
+                <a href="#"><i class="ri-dribbble-line"></i></a>
+                <a href="#"><i class="ri-behance-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </div>
+            <div class="h-btn">
+                <a href="#" class="btn1">
+                    My Works
+                    <i class="ri-arrow-right-s-line"></i>
+                </a>
+                <a href="#" class="btn2">
+                    See my CV
+                    <i class="ri-download-2-line"></i>
+                </a>
+            </div>
         </div>
-    </section>
+      </section>
+
+      <!-- about -->
+       <section class="about" id="about">
+        <div class="about-img">
+            <img src="./assets/images/logo.png" alt="">
+        </div>
+        <div class="about-text">
+            <a href="#" class="h-line">
+                <i class="ri-shining-2-line"></i>
+                <span>About!</span>
+            </a>
+            <h2>More <span>About Me</span></h2>
+            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, veniam. Lorem ipsum dolor sit amet.</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore beatae, optio dolorum eius sapiente iusto corporis tenetur ducimus, a odio repellendus quibusdam asperiores minus vero illo corrupti deserunt! Quod nisi accusamus saepe, iure accusantium earum!</p>
+            
+            <div class="h-btn">
+                <a href="#" class="btn1">
+                    Hire Me
+                    <i class="ri-arrow-right-s-line"></i>
+                </a>
+                <a href="#" class="btn2">
+                    See my CV
+                    <i class="ri-download-2-line"></i>
+                </a>
+            </div>
+        </div>
+       </section>
+
+       <!-- services -->
+        <section class="services" id="services">
+            <div class="services-left">
+                <a href="#" class="h-line">
+                    <i class="ri-shining-2-line"></i>
+                    <span>My services</span>
+                </a>
+                <h2>What I Provide <span>To My Client</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quos recusandae molestiae voluptas nam dolorem provident, perferendis sunt eligendi voluptatum adipisci cum optio eius distinctio totam ducimus vitae. Ex, dolores.</p>
+                <div class="h-btn">
+                    <a href="#" class="btn1">
+                        View all
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                    <a href="#" class="btn2">
+                        See my CV
+                        <i class="ri-download-2-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="services-right">
+                <div class="box">
+                    <div class="box-icon">
+                        <i class="ri-brush-line"></i>
+                    </div>
+                    <div class="box-text">
+                        <h5>Design</h5>
+                        <p>I have designed 1000+ websites</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-icon">
+                        <i class="ri-code-s-slash-line"></i>
+                    </div>
+                    <div class="box-text">
+                        <h5>Development</h5>
+                        <p>I have developed 1000+ websites</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-icon">
+                        <i class="ri-macbook-line"></i>
+                    </div>
+                    <div class="box-text">
+                        <h5>Marketing</h5>
+                        <p>I have marketed 1000+ websites</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio -->
+         <section class="portfolio" id="portfolio">
+            <div class="mid-text">
+                <a href="#" class="h-line">
+                    <i class="ri-shining-2-line"></i>
+                    <span>Portfolio</span>
+                </a>
+                <h2>My Latest <span>Projects</span></h2>
+            </div>
+            <div class="portfolio-content">
+                <div class="row">
+                    <div class="row-img">
+                        <a href="https://xoxoghana.epizy.com"><img src="./assets/images/pt1.png" alt=""></a>
+                    </div>
+                    <div class="row-in">
+                        <div class="row-left">
+                            <h3>Website Design</h3>
+                            <h6>Web Design, App Design</h6>
+                        </div>
+                        <div class="row-right">
+                            <a href="#"><i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <a href="https://francesc-pablo.github.io/store_landing/"><img src="./assets/images/pt2.png" alt=""></a>
+                    </div>
+                    <div class="row-in">
+                        <div class="row-left">
+                            <h3>Website Design</h3>
+                            <h6>Web Design, App Design</h6>
+                        </div>
+                        <div class="row-right">
+                            <a href="#"><i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <a href="https://francesc-pablo.github.io/store_landing/"><img src="./assets/images/pt3.png" alt=""></a>
+                    </div>
+                    <div class="row-in">
+                        <div class="row-left">
+                            <h3>Website Design</h3>
+                            <h6>Web Design, App Design</h6>
+                        </div>
+                        <div class="row-right">
+                            <a href="#"><i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- contact -->
+        <section class="contact" id="contact">
+            <div class="contact-main">
+                <a href="#" class="h-line">
+                    <i class="ri-shining-2-line"></i>
+                    <span>Contact</span>
+                </a>
+                <h2>Got a Project? <span>Let's talk</span></h2>
+                <div class="email">
+                    <p>Email:</p>
+                    <h6>sparklewebservices@gmail.com</h6>
+                </div>
+                <div class="num">
+                    <p>Call:</p>
+                    <h6>+233240743657</h6>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="ri-dribbble-line"></i></a>
+                    <a href="#"><i class="ri-behance-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" name="" placeholder="Email address..." required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." required></textarea>
+                <input type="submit" value="Submit Now" class="submit-btn">
+            </form>
+        </section>
+
+        <!-- footer -->
+         <div class="footer">
+            <div class="copyright">
+                <p>© 2024 Pablo</p>
+             </div>
+             <a href="#home" class="scroll-up">
+                <i class="ri-arrow-up-s-line"></i>
+             </a>
+         </div>
+    
+    <!-- js CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- js file -->
+     <script src="./assets/js/script.js"></script>
+
+
+    
 </body>
 
 </html>
