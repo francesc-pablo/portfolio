@@ -127,7 +127,6 @@ section {
 
 .home-text {
     padding-top: 30px;
-    width: 70%;
 }
 
 .h-line {
@@ -754,6 +753,10 @@ form .submit-btn:hover {
 
     .menulist.open {
         left: 0;
+    }
+
+    .home-text h1 {
+        font-size: 35px;
     }
 }
 
