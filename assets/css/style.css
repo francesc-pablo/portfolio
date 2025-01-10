@@ -781,4 +781,15 @@ form .submit-btn:hover {
         width: 40%;
         font-size: 13px;
     }
+
+    .home {
+        padding-top: 200px;
+    }
+}
+
+@media (max-height:900px) {
+    .home {
+        padding-top: 350px;
+        padding-bottom: 350px;
+    }
 }
