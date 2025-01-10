@@ -24,3 +24,23 @@ var typed = new Typed('#fancy', {
     backSpeed: 70,
     loop:true
   });
+// Optional interactivity: Highlight skills on click
+document.querySelectorAll('.skill-category').forEach(category => {
+    category.addEventListener('click', () => {
+      alert(`You clicked on ${category.querySelector('h3').innerText} skills!`);
+    });
+  });
+// fadein on scroll
+document.addEventListener("scroll", function () {
+  var pageTop = window.scrollY;
+  var pageBottom = pageTop + window.innerHeight;
+  var tags = document.querySelectorAll(".fadein");
+
+  tags.forEach(function (tag) {
+    if (tag.getBoundingClientRect().top + pageTop < pageBottom) {
+      tag.classList.add("visible");
+    } else {
+      tag.classList.remove("visible");
+    }
+  });
+});

@@ -26,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="document.body.style.opacity='1'">
 
     <!-- header -->
      <header>
@@ -34,16 +34,16 @@
 
         <ul class="menulist">
             <a href="#home" class="active">Home</a>
-            <a href="#about">About Me</a>
+            <a href="#about">Tech Stack</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </ul>
 
         <div class="menu-right">
-            <a href="#" class="menu-btn">
+            <a href="https://wa.me/message/L3FDRMWHHTW7D1" class="menu-btn">
                 <span>Let's Talk</span>
-                <i class="ri-message-3-line"></i>
+                <i class="ri-whatsapp-line"></i>
             </a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
@@ -57,20 +57,20 @@
                 <span>This is Pablo</span>
             </a>
             <h1>UI / UX and <br> <span id="fancy"></span></h1>
-            <h4>With 20+ years of experience</h4>
+            <h4>Bringing ideas to life with my mouse and keyboard</h4>
+            <p>Hi there, Since writing my first lines of code (visual basic) in 2018, I have been on an exciting journey of growth and discovery. Alongside earning my degree in Business Computing from the University of Greenwich, I have honed my skills in development, embraced the principles of UI/UX design, and tackled increasingly complex challenges to ensure I’m always improving.
+            </p><br><br>
             <div class="social-icons">
-                <a href="#"><i class="ri-dribbble-line"></i></a>
-                <a href="#"><i class="ri-behance-fill"></i></a>
-                <a href="#"><i class="ri-instagram-line"></i></a>
-                <a href="#"><i class="ri-twitter-fill"></i></a>
-                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://github.com/francesc-pablo"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/william-amponsah-8a8885200"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://wa.me/message/L3FDRMWHHTW7D1"><i class="ri-whatsapp-fill"></i></a>
             </div>
             <div class="h-btn">
-                <a href="#" class="btn1">
+                <a href="#portfolio" class="btn1">
                     My Works
                     <i class="ri-arrow-right-s-line"></i>
                 </a>
-                <a href="#" class="btn2">
+                <a href="./assets/cv/William_Amponsah.pdf" class="btn2">
                     See my CV
                     <i class="ri-download-2-line"></i>
                 </a>
@@ -78,61 +78,100 @@
         </div>
       </section>
 
-      <!-- about -->
+      <!-- tech stack -->
        <section class="about" id="about">
-        <div class="about-img">
-            <img src="./assets/images/logo.png" alt="">
-        </div>
-        <div class="about-text">
+        
+        <div class="fadein about-text">
             <a href="#" class="h-line">
                 <i class="ri-shining-2-line"></i>
-                <span>About!</span>
+                <span>Tech Stack</span>
             </a>
-            <h2>More <span>About Me</span></h2>
-            <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, veniam. Lorem ipsum dolor sit amet.</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore beatae, optio dolorum eius sapiente iusto corporis tenetur ducimus, a odio repellendus quibusdam asperiores minus vero illo corrupti deserunt! Quod nisi accusamus saepe, iure accusantium earum!</p>
-            
-            <div class="h-btn">
-                <a href="#" class="btn1">
-                    Hire Me
-                    <i class="ri-arrow-right-s-line"></i>
-                </a>
-                <a href="#" class="btn2">
-                    See my CV
-                    <i class="ri-download-2-line"></i>
-                </a>
-            </div>
+            <h2>My <span>Tech Stack</span></h2>
+            <div class="skills-container">
+                <div class="skill-category" id="languages-skills">
+                  <h3>Languages</h3>
+                  <ul>
+                    <li><i class="ri-html5-line"></i> HTML</li>
+                    <li><i class="ri-css3-line"></i> CSS</li>
+                    <li><i class="ri-javascript-line"></i>JavaScript</li>
+                    <li><i class="ri-braces-line"></i> php</li>
+                  </ul>
+                </div>
+          
+                <div class="skill-category" id="frameworks-skills">
+                  <h3>Frameworks</h3>
+                  <ul>
+                    <li><i class="ri-tailwind-css-line"></i> Tailwind</li>
+                    <li><i class="ri-nodejs-fill"></i> Node.js</li>
+                    <li><i class="ri-ie-line"></i> Express</li>
+                    <li><i class="ri-bootstrap-line"></i> Bootsrap</li>
+                  </ul>
+                </div>
+
+                <div class="skill-category" id="databases-skills">
+                    <h3>Databases</h3>
+                    <ul>
+                      <li><i class="ri-database-2-line"></i> MySQL</li>
+                      <li><i class="ri-database-line"></i> Oracle</li>
+                      <li><i class="ri-leaf-fill"></i> MongoDB</li>
+                    </ul>
+                  </div>
+
+                <div class="skill-category" id="uiux-skills">
+                    <h3>Builders/CMS</h3>
+                    <ul>
+                      <li><i class="ri-wordpress-fill"></i> WordPress</li>
+                      <li><i class="ri-microsoft-line"></i> Microsoft Sharepoint</li>
+                    </ul>
+                </div>  
+          
+                <div class="skill-category" id="uiux-skills">
+                  <h3>UI/UX</h3>
+                  <ul>
+                    <li><i class="ri-tools-line"></i> Figma</li>
+                    <li><i class="ri-pages-line"></i> Azure RP</li>
+                  </ul>
+                </div>
+
+                <div class="skill-category" id="workflow-skills">
+                    <h3>Workflow</h3>
+                    <ul>
+                      <li><i class="ri-git-commit-line"></i> Git</li>
+                      <li><i class="ri-github-fill"></i> Github</li>
+                    </ul>
+                  </div>
+              </div>
         </div>
        </section>
 
        <!-- services -->
         <section class="services" id="services">
-            <div class="services-left">
+            <div class="fadein services-left">
                 <a href="#" class="h-line">
                     <i class="ri-shining-2-line"></i>
                     <span>My services</span>
                 </a>
                 <h2>What I Provide <span>To My Client</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quos recusandae molestiae voluptas nam dolorem provident, perferendis sunt eligendi voluptatum adipisci cum optio eius distinctio totam ducimus vitae. Ex, dolores.</p>
+                <p>My passion lies in crafting impactful business solutions that drive growth and success. Whether it's designing a website to amplify brand visibility or developing software to automate tedious manual processes, I thrive on helping businesses transition from where they are to where they dream to be, continuously refining and improving along the way.</p>
                 <div class="h-btn">
-                    <a href="#" class="btn1">
+                    <a href="#portfolio" class="btn1">
                         View all
                         <i class="ri-arrow-right-s-line"></i>
                     </a>
-                    <a href="#" class="btn2">
-                        See my CV
-                        <i class="ri-download-2-line"></i>
+                    <a href="#contact" class="btn2">
+                        Hire me
+                        <i class="ri-message-3-line"></i>
                     </a>
                 </div>
             </div>
-            <div class="services-right">
+            <div class="fadein services-right">
                 <div class="box">
                     <div class="box-icon">
                         <i class="ri-brush-line"></i>
                     </div>
                     <div class="box-text">
                         <h5>Design</h5>
-                        <p>I have designed 1000+ websites</p>
+                        <p>Process of planning, conceptualizing and UI/UX</p>
                     </div>
                 </div>
                 <div class="box">
@@ -141,7 +180,7 @@
                     </div>
                     <div class="box-text">
                         <h5>Development</h5>
-                        <p>I have developed 1000+ websites</p>
+                        <p>Implementation of the plan in a functional way</p>
                     </div>
                 </div>
                 <div class="box">
@@ -149,8 +188,8 @@
                         <i class="ri-macbook-line"></i>
                     </div>
                     <div class="box-text">
-                        <h5>Marketing</h5>
-                        <p>I have marketed 1000+ websites</p>
+                        <h5>Optimization</h5>
+                        <p>Testing, Content optimization , SEO and Adverts</p>
                     </div>
                 </div>
             </div>
@@ -158,22 +197,22 @@
 
         <!-- portfolio -->
          <section class="portfolio" id="portfolio">
-            <div class="mid-text">
+            <div class="fadein mid-text">
                 <a href="#" class="h-line">
                     <i class="ri-shining-2-line"></i>
                     <span>Portfolio</span>
                 </a>
                 <h2>My Latest <span>Projects</span></h2>
             </div>
-            <div class="portfolio-content">
+            <div class="fadein portfolio-content">
                 <div class="row">
                     <div class="row-img">
                         <a href="https://xoxoghana.epizy.com"><img src="./assets/images/pt1.png" alt=""></a>
                     </div>
                     <div class="row-in">
                         <div class="row-left">
-                            <h3>Website Design</h3>
-                            <h6>Web Design, App Design</h6>
+                            <h3>Web Dev Company</h3>
+                            <h6>WordPress, CSS</h6>
                         </div>
                         <div class="row-right">
                             <a href="#"><i class="ri-arrow-right-line"></i></a>
@@ -186,8 +225,8 @@
                     </div>
                     <div class="row-in">
                         <div class="row-left">
-                            <h3>Website Design</h3>
-                            <h6>Web Design, App Design</h6>
+                            <h3>Fashion Webpage</h3>
+                            <h6>HTML, CSS</h6>
                         </div>
                         <div class="row-right">
                             <a href="#"><i class="ri-arrow-right-line"></i></a>
@@ -196,12 +235,12 @@
                 </div>
                 <div class="row">
                     <div class="row-img">
-                        <a href="https://francesc-pablo.github.io/store_landing/"><img src="./assets/images/pt3.png" alt=""></a>
+                        <a href="https://francesc-pablo.github.io/github_user_search/"><img src="./assets/images/github.png" alt=""></a>
                     </div>
                     <div class="row-in">
                         <div class="row-left">
-                            <h3>Website Design</h3>
-                            <h6>Web Design, App Design</h6>
+                            <h3>Github User Search</h3>
+                            <h6>HTML, CSS, JavaScript</h6>
                         </div>
                         <div class="row-right">
                             <a href="#"><i class="ri-arrow-right-line"></i></a>
@@ -213,7 +252,7 @@
 
          <!-- contact -->
         <section class="contact" id="contact">
-            <div class="contact-main">
+            <div class="fadein contact-main">
                 <a href="#" class="h-line">
                     <i class="ri-shining-2-line"></i>
                     <span>Contact</span>
@@ -221,7 +260,7 @@
                 <h2>Got a Project? <span>Let's talk</span></h2>
                 <div class="email">
                     <p>Email:</p>
-                    <h6>sparklewebservices@gmail.com</h6>
+                    <h6>francescpacopablo@gmail.com</h6>
                 </div>
                 <div class="num">
                     <p>Call:</p>
@@ -235,7 +274,7 @@
                     <a href="#"><i class="ri-linkedin-fill"></i></a>
                 </div>
             </div>
-            <form class="contact-form">
+            <form class="fadein contact-form">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" name="" placeholder="Email address..." required>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." required></textarea>
@@ -258,7 +297,6 @@
 
     <!-- js file -->
      <script src="./assets/js/script.js"></script>
-
 
     
 </body>
