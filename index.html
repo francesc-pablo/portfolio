@@ -278,10 +278,13 @@
                 <a href="https://wa.me/message/L3FDRMWHHTW7D1"><i class="ri-whatsapp-fill"></i></a>
             </div>
         </div>
-        <form class="fadein contact-form" action="https://formspree.io/f/mjkklook" method="POST">
+        <form class="fadein contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="a437b15a-9b95-4776-a918-5240bf89528a">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Email address..." required>
             <textarea name="message" id="" cols="30" rows="10" placeholder="Write message here..." required></textarea>
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             <input type="submit" value="Submit Now" class="submit-btn">
         </form>
     </section>
